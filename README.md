@@ -26,10 +26,9 @@ The selection logic is simple and rule-based.
 
 ## Run
 
-Put Deepseek API Key in .env file.
-
 In terminal:
 
+echo "DEEPSEEK_API_KEY=your_api_key" >> .env
 python demo.py
 
 ## Example Test Case

@@ -28,8 +28,10 @@ The selection logic is simple and rule-based.
 
 In terminal:
 
+```bash
 echo "DEEPSEEK_API_KEY=your_api_key" >> .env
 python demo.py
+```
 
 ## Example Test Case
 

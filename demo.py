@@ -88,18 +88,17 @@ def run_agent(user_input: str) -> str:
 
     use_tool = parsed.get("use_tool") is True
     if not use_tool:
-        print(f"[demo] No tool requested by model. Return direct response.")
+        print(f"\n[demo] No tool requested by model. Return direct response.")
         return parsed.get("response", raw)
 
     tool_name = parsed.get("tool_name")
     arguments = parsed.get("arguments") or {}
 
-    print(f"[demo] Tool requested by model: {tool_name}")
+    print(f"\n[demo] Tool requested by model: {tool_name}")
     print(f"[demo] Tool arguments from model: {json.dumps(arguments, ensure_ascii=False)}")
 
     if tool_name == "sentiment_analyzer":
         text_arg = arguments.get("text", "")
-        print(f"[demo] Calling tool.sentiment_analyzer with text: {text_arg!r}")
         tool_result = tool.sentiment_analyzer(text_arg)
     else:
         tool_result = {

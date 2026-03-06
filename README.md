@@ -11,7 +11,7 @@ A Python project showing how an Agent calls Tools.
 
 ## Files
 
-- tool.py  → defines the Tool class
+- tool.py  → defines the Tool class and a Sentiment Analysis Tool
 - demo.py  → defines the Agent and runs a demo
 
 ## How It Works

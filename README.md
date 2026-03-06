@@ -50,4 +50,4 @@ Use this input when running the demo:
 Perform a sentiment analysis on this: 13804956138101928457091486501298470128394709183465710384519832460123985761304895761082734620398470329847230789560182397561089237401786508717345891203648012384567109234789123657814376501923487501982367480132465781346058917478524160582360498217
 ```
 
-Expected behaviour: The agant should still select the sentiment analysis tool because user requested to do so. But the tool will return structured error code, and the agent can still communicate with the user efectively based on it.
+Expected behaviour: The agant should still select the sentiment analysis tool because user requested to do so. But the tool will return structured error, and the agent can still communicate with the user effectively about it.
